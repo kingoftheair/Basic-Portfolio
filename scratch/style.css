@@ -1,7 +1,6 @@
 /* CSS reset */
 
 
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,7 +27,6 @@ time, mark, audio, video {
 }
 
 html,body { 
-    background-image: url(assets/images/bodybackground);
     height:100%;
     margin: 0; /*used for sticky footer*/
 }
@@ -48,13 +46,13 @@ header {
     border-bottom: solid #ccc 2px;
 }
 
-h1 {
+h1{
     font-size: 24px;
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.top { 
+.top{
     max-width:960px;
     margin: 0 auto;
 }
@@ -99,6 +97,9 @@ h1 {
     top: 20px;
 }
 
+.nav-li:hover{
+    text-transform: uppercase;
+}
 
 .nav-li:last-child{
      border:0;
@@ -115,25 +116,24 @@ nav a {
 
 
 .background {
-    background-image:url(../images/bodybackground.png);
+    background-image:url(../images/qbkls.png);
     padding: 20px 0 85px;
     min-height: 100%; /*used for sticky footer */
     margin: 0 auto -50px; /*used for sticky footer*/
-    }
+}
 
 .container {
     max-width:960px;
-    max-height:960px;
     margin: 0px auto;
     background-color: white;
     border: solid #ddd 1px;
 }
 
 .content {
-    padding: 30px 40px 30px 40px;
+    padding: 30px 40px 30px;
 }
 
-h2 {
+h2{
     color: #4aaaa5;
     font-weight: bold;
     font-size: 20px;
@@ -156,7 +156,7 @@ h2 {
     padding-top: 10px; 
     font-size: 16px;
     line-height: 24px;
-    text-align:justify;
+    text-align: justify;
     text-indent: 25px;
 }
 
@@ -190,59 +190,85 @@ h2 {
     transition: all .2s ease-in-out;
 }
 
-.hangmanp {
+.cap-hang {
     position: absolute;
     bottom: 45px;
 }
 
+.hang:hover {
+    transform: scale(1.1)
+}
 
 
             /* rpg game */
 
-            .rpg {
-                position: relative;
-                transition: all .2s ease-in-out;
-            }
-.rpggamep {
+
+.rpg {
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.cap-rpg {
     position: absolute;
     bottom: 45px;
 }
 
+.rpg:hover {
+    transform: scale(1.1)
+}
 
 
             /* trivia game */
 
-            .triv {
-                position: relative;
-                transition: all .2s ease-in-out;
-            }
-.triviagamep {
+
+.triv {
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.cap-triv {
     position: absolute;
     bottom: 45px;
+}
+
+.triv:hover {
+    transform: scale(1.1)
 }
 
 
             /* Rutgers Info Widget */
 
-            .rutg {
-                position: relative;
-                transition: all .2s ease-in-out;
-            }
-.rutgp {
+
+.rutg {
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.cap-rutg {
     position: absolute;
     bottom: 45px;
+}
+
+.rutg:hover {
+    transform: scale(1.1)
 }
 
 
             /* Rock Paper Scissors */
 
-            .rock {
-                position: relative;
-                transition: all .2s ease-in-out;
-            }
-.rpsp {
+
+.rock {
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.cap-rock {
     position: absolute;
     bottom: 45px;
+}
+
+.rock:hover {
+    transform: scale(1.1)
 }
 
 
@@ -293,7 +319,8 @@ textarea {
     bottom: 0;
 }
 
-.footer, .push { 
+.footer, 
+.push { 
     height: 50px; /*used for sticky footer*/
 }
 
@@ -307,7 +334,7 @@ textarea {
 /*clear fix*/
 
 
-.cf {
+.cf{
     clear:both;
     overflow: auto;
 }
