@@ -63,7 +63,7 @@ h1 {
 
 
  .name {
-            float:left;
+        float:left;
         }
 
 .Harrison {
@@ -80,6 +80,10 @@ h1 {
 
 .nav {
     float: right;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 
@@ -162,6 +166,7 @@ h2 {
     color:#fff;
     text-align: center;
     white-space: nowrap;
+
 }
 
 /* hangman */
