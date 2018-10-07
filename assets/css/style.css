@@ -248,6 +248,7 @@ label {
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 12px;
     text-indent: 5px;
+    resize: vertical;
 }
 
 textarea {
